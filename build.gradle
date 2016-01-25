@@ -1,4 +1,4 @@
-allprojects  {
+allprojects {
   apply plugin: 'maven'
 
   group = 'org.forgerock.cuppa'
@@ -9,6 +9,7 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'checkstyle'
   apply plugin: 'findbugs'
+  apply plugin: 'jacoco'
 
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
@@ -36,5 +37,4 @@ subprojects {
   test {
     useTestNG()
   }
-
 }
